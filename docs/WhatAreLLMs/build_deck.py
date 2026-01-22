@@ -75,6 +75,8 @@ def rel_href(from_path: Path, to_path: Path) -> str:
     return rel
 
 def rewrite_img_srcs(body_html: str, slide_path: Path) -> str:
+    DeprecationWarning('Warning: rewrite_img_srcs was called.')
+    return body_html
     # For print.html: convert relative img src to repo-root-absolute paths
     def repl(m: re.Match) -> str:
         before, src, after = m.group(1), m.group(2), m.group(3)
@@ -342,7 +344,10 @@ def build_print(deck_title: str, theme_href: str, deck_math_cfg: Dict[str, Any],
         m = RE_MAIN.search(src)
         if not m:
             raise SystemExit(f"{s.file}: missing <main class=\"slide-body\">...</main>")
+        
+        # Nope! [_] Temporary fix, function just returns the original body
         body = rewrite_img_srcs(m.group("body"), slide_path)
+
         sections.append(f"""
     <section class="print-slide">
       <header class="print-header">

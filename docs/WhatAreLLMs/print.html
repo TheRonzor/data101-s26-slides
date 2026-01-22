@@ -55,7 +55,7 @@
         </ul>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -90,7 +90,7 @@
         </ul>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -134,15 +134,15 @@
           <img
             class="img-md"
             alt="Placeholder figure"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/Turing_test_diagram.png"
+            src="../assets/images/Turing_test_diagram.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px; text-align: center">
+          <figcaption class="caption">
             https://en.wikipedia.org/wiki/Turing_test
           </figcaption>
         </figure>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -164,7 +164,7 @@
         </ul>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -172,6 +172,7 @@
       </header>
       <div class="print-body">
 
+        <div>
         <h1>
           What makes modern AI systems different from those in past decades (their "ancestors")?
         </h1>
@@ -188,18 +189,21 @@
             requirements are on the scale of small cities.
           </li>
         </ul>
+        </div>
+        <div>
         <figure class="slide-figure">
           <img
             class="img-sm"
             alt="Backpropagation"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/gpt2-text.png"
+            src="../assets/images/gpt2-text.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption-p">
             From a course I taught in 2019. Using a GPT-2 like model, I entered the text in bold, it filled in the rest. Groundbreaking at the time, it was basically a fancy autocomplete tool that would go off the rails after a few paragraphs.
           </figcaption>
+          </div>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -221,7 +225,7 @@
             </ul>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -229,28 +233,35 @@
       </header>
       <div class="print-body">
 
-        <h1>Contrasted with "traditional" AI:</h1>
-        <ul class="bullets">
-          <li>
-            Generative AI are systems that produce new content (text/images/audio).
-          </li>
-          <li>Contrast with older "AI" or "ML" systems systems that typically classify or predict, such as:</li>
-            <ul class="bullets">
-                <li>Classifying an email as spam/not spam.</li>
-                <li>Detect fraudulent transactions.</li>
-                <li>Segment images, e.g., parsing satellite imagery into regions like land/water/forest/building.</li>
-                <li>Predict (forecast) the next number (many flavors of regression).</li>
-            </ul>
-            <li>What we call "Generative AI" today is based primarily on what it outputs:</li>
-            <ul class="bullets">
-                <li>Image/video generation.</li>
-                <li>Text generation.</li>
-                <li>Molecular/material architectures.</li>
-            </ul>
-          </li>
+        <div>
+          <h1>
+            What we call "Generative AI" today is based primarily on what it
+            outputs:
+          </h1>
+          <ul class="bullets">
+            <li>Text generation (ChatGPT, Gemini, Claude, etc.).</li>
+            <li>Image/video generation (Veo, Sora, etc.).</li>
+            <li>
+              Molecular/material architectures (AlphaFold 3 - Nobel Prize
+              work!).
+            </li>
+          </ul>
+        </div>
+        <div>
+          <figure class="slide-figure">
+            <img
+              class="img-sm"
+              alt="MLP Diagram"
+              src="../assets/images/nobel-chem-2024.png"
+            />
+            <figcaption class="caption">
+              https://www.nobelprize.org/prizes/chemistry/2024/press-release/
+            </figcaption>
+          </figure>
+        </div>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -286,14 +297,20 @@
           </li>
           <div class="card">
             <strong>Very Important:</strong> LLMs are not truth engines. They
-            are language models trained to predict the next word. They are
+            are language models trained to predict the next word*. They are
             getting very good at this, but do not lose sight of this fact!
           </div>
           <li>So, how did we get here?</li>
         </ul>
+        <p>
+          *<i
+            >This is not entirely accurate, but more on that in a future
+            lecture.</i
+          >
+        </p>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -320,7 +337,7 @@
         </ul>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -352,15 +369,15 @@
           <img
             class="img-lg"
             alt="Mark I Perceptron"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/NMAH-72-361.jpg"
+            src="../assets/images/NMAH-72-361.jpg"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             https://americanhistory.si.edu/collections/object/nmah_334414
           </figcaption>
         </figure>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -405,15 +422,15 @@
           <img
             class="img-lg"
             alt="Mark I Perceptron"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/perceptron-markI-diagram.png"
+            src="../assets/images/perceptron-markI-diagram.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             https://anatomiesofintelligence.github.io/posts/2019-06-21-organization-mark-i-perceptron
           </figcaption>
         </figure>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -447,15 +464,15 @@
           <img
             class="img-lg"
             alt="Perceptrons"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/Perceptrons_(book).jpg"
+            src="../assets/images/Perceptrons_(book).jpg"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption-p">
             https://en.wikipedia.org/wiki/Perceptrons_%28book%29
           </figcaption>
         </figure>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -507,15 +524,15 @@
           <img
             class="img-md"
             alt="Decision Tree"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/DecisionTree.jpg"
+            src="../assets/images/DecisionTree.jpg"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             https://inside-machinelearning.com/en/decision-tree-and-hyperparameters/
           </figcaption>
         </figure>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -550,15 +567,15 @@
           <img
             class="img-sm"
             alt="Backpropagation"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/back.png"
+            src="../assets/images/back.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             https://www.r-bloggers.com/2017/05/training-neural-networks-with-backpropagation-original-publication/
           </figcaption>
         </figure>
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -589,9 +606,9 @@
           <img
             class="img-md"
             alt="MNIST Data"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/MNIST_dataset_example.png"
+            src="../assets/images/MNIST_dataset_example.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             Examples from the MNIST dataset.
             https://en.wikipedia.org/wiki/MNIST_database
           </figcaption>
@@ -600,16 +617,16 @@
           <img
             class="img-md"
             alt="MLP Diagram"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/Example_of_a_deep_neural_network.png"
+            src="../assets/images/Example_of_a_deep_neural_network.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             Example MLP architecture. https://en.wikipedia.org/wiki/Hidden_layer
           </figcaption>
         </figure>
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -645,16 +662,16 @@
           <img
             class="img-md"
             alt="Attention is all you need"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/attention_abstract.png"
+            src="../assets/images/attention_abstract.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             https://arxiv.org/pdf/1706.03762
           </figcaption>
         </figure>
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -694,16 +711,16 @@
           <img
             class="img-md"
             alt="MLP Diagram"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/transformers_PNG10.png"
+            src="../assets/images/transformers_PNG10.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             Not what we are talking about!
           </figcaption>
         </figure>
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -747,16 +764,16 @@
           <img
             class="img-sm"
             alt="MLP Diagram"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/attention_fig1.png"
+            src="../assets/images/attention_fig1.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption">
             https://arxiv.org/pdf/1706.03762
           </figcaption>
         </figure>
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -797,17 +814,17 @@
           <img
             class="img-sm"
             alt="MLP Diagram"
-            src="C:/Users/rdsmith/projects/DATA101-reasoning/slides/WhatAreLLMs/assets/images/bike.png"
+            src="../assets/images/bike.png"
           />
-          <figcaption style="font-size: 0.9rem; margin-top: 8px">
+          <figcaption class="caption-p">
             An image of a bike, processed by an older CNN (Convolutional Neural
-            Network).
+            Network). Go play around at: https://deepdreamgenerator.com/
           </figcaption>
         </figure>
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -827,7 +844,10 @@
               "He is running." might decompose into 5 tokens: (he, is, run,
               ning, .)
             </li>
-            <li>Different models tokenize differently, so mileage may vary.</li>
+            <li>
+              Different models tokenize differently, so mileage may vary. (See
+              https://tiktokenizer.vercel.app/)
+            </li>
             <li>
               LLMs use the tokens in their current context window to predict the
               next token, over and over and over again.
@@ -849,7 +869,7 @@
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -899,7 +919,7 @@
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -955,7 +975,7 @@
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -988,7 +1008,7 @@
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
@@ -1015,7 +1035,7 @@
         <!-- </div> -->
       
       </div>
-    </section>
+    </section>
 
     <section class="print-slide">
       <header class="print-header">
