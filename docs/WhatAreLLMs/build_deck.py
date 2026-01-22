@@ -315,7 +315,7 @@ def build_index(deck_title: str, theme_href: str, slides: List[Slide]) -> None:
       <hr />
     </header>
     <main class="slide-body">
-      <div><a href="print.html">Experimental: Single page for printing (most interactivity disabled, figure/font sizing/placement not preserved).</a></div>
+      <div><a href="slides/print.html">Experimental: Single page for printing (most interactivity disabled, figure/font sizing/placement not preserved).</a></div>
       <h2>Table of Contents</h2>
       <ul class = "bullets" style="list-style-type: none;">
 {os.linesep.join(items)}
@@ -345,8 +345,8 @@ def build_print(deck_title: str, theme_href: str, deck_math_cfg: Dict[str, Any],
         if not m:
             raise SystemExit(f"{s.file}: missing <main class=\"slide-body\">...</main>")
         
-        # Nope! [_] Temporary fix, function just returns the original body
-        body = rewrite_img_srcs(m.group("body"), slide_path)
+        # Nope! [_]
+        # body = rewrite_img_srcs(m.group("body"), slide_path)
 
         sections.append(f"""
     <section class="print-slide">
@@ -354,7 +354,7 @@ def build_print(deck_title: str, theme_href: str, deck_math_cfg: Dict[str, Any],
         <h2 class="print-title">{i}. {s.title}</h2>
       </header>
       <div class="print-body">
-{body}
+{m.group("body")}
       </div>
     </section>
 """.rstrip())
@@ -388,7 +388,8 @@ def build_print(deck_title: str, theme_href: str, deck_math_cfg: Dict[str, Any],
 {math_script}</body>
 </html>
 """
-    (ROOT / "print.html").write_text(html, encoding="utf-8")
+    print(f"ROOT={ROOT}")
+    (ROOT / "slides" / "print.html").write_text(html, encoding="utf-8")
 
 def main() -> None:
     deck_title, theme, deck_math_cfg, slides = read_manifest()
