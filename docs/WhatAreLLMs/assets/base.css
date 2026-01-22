@@ -109,12 +109,15 @@ ul.bullets {
 /* Image sizing helpers */
 .img-sm {
   max-width: 240px;
+  max-height: 240px;
 }
 .img-md {
   max-width: 420px;
+  max-height: 420px;
 }
 .img-lg {
   max-width: 640px;
+  max-height: 640px;
 }
 
 .caption {
