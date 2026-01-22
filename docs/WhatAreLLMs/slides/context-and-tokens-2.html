@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Context and Tokens, p2</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">Tips for Managing Context Windows</h1>
+        <hr />
+      </header>
+      <main class="slide-body">
+        <div>
+          <h1>All LLMs have a limited <b>context window</b>.</h1>
+          <ul class="bullets">
+            <li>
+              LLMs tend to perform better when they have more context about what
+              you are trying to do.
+            </li>
+            <li>
+              The more room you give the LLM to guess, the more likely it is to
+              guess incorrectly.
+            </li>
+            <li>
+              On the other hand, and especially for very long chats (or if you
+              give it many documents to analyze), the context window might fill
+              up. Ever feel like the model suddenly got amnesia?
+            </li>
+          </ul>
+          <h1>
+            Learn to work iteratively and decompose your big problems into
+            smaller problems.
+          </h1>
+          <ul class="bullets">
+            <li>
+              Periodically ask the LLM to summarize your chat and save its
+              output. Use that summary to seed a new chat.
+            </li>
+            <li>Working on a big project?</li>
+            <ul class="bullets">
+              <li>Start by asking the LLM to help you plan the project.</li>
+              <li>Work with the LLM to come up with an implementation plan.</li>
+              <li>
+                Use those plans to tackle the project in a sequence of separate,
+                smaller steps that can each be tested/validated independently.
+              </li>
+            </ul>
+          </ul>
+        </div>
+        <!-- <div> -->
+
+        <!-- </div> -->
+      </main>
+      <footer class="slide-nav" data-auto-nav>
+      <a class="nav-prev" href="context-and-tokens.html">‹ Prev</a>
+      <a class="nav-index" href="../index.html">Index</a>
+      <a class="nav-next" href="context-and-tokens-3.html">Next ›</a>
+      <span class="nav-counter">21/25</span>
+    </footer>
+    </div>
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Context and Tokens, p3</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">Context and Prompt Engineering</h1>
+        <hr />
+      </header>
+      <main class="slide-body">
+        <div>
+          <h1>Be clear and concise.</h1>
+          <ul class="bullets">
+            <li>
+              LLMs tend to perform better when they have more context about what
+              you are trying to do.
+            </li>
+            <li>
+              The more room you give the LLM to guess, the more likely it is to
+              guess incorrectly.
+            </li>
+            <li>
+              Provide constraints and clear goals, even including the
+              format/style of the response you want:
+            </li>
+            <ul class="bullets">
+              <li>Bad: "Can you help me improve my presentation?"</li>
+              <li>
+                Slightly Better: "Edit this paragraph to make it more clear and
+                professional."
+              </li>
+              <li>
+                Much Better: "Edit this paragraph so that it is more
+                understandable to an audience of first-year college students
+                with no programming experience. Retain the original meaning,
+                keep the final version between 200-300 words, and provide 3
+                bullet points explaining the most important changes you made and
+                why you made them. Provide the edited paragraph first, and the
+                bullet list below it.
+              </li>
+            </ul>
+            <li>
+              Even better than the last version would be to have some other
+              document(s) you have provided the LLM, for example a course
+              description/syllabus.
+            </li>
+            <li>
+              If you don't like what you get, try to identify exactly what it is
+              you don't like, be as clear as possible about it, and work
+              iteratively - one issue at a time.
+            </li>
+          </ul>
+        </div>
+        <!-- <div> -->
+
+        <!-- </div> -->
+      </main>
+      <footer class="slide-nav" data-auto-nav>
+      <a class="nav-prev" href="context-and-tokens-2.html">‹ Prev</a>
+      <a class="nav-index" href="../index.html">Index</a>
+      <a class="nav-next" href="context-and-tokens-4.html">Next ›</a>
+      <span class="nav-counter">22/25</span>
+    </footer>
+    </div>
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>

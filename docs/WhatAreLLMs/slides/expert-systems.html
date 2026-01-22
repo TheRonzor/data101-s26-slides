@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Expert Systems</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">Expert Systems (1970s-1980s)</h1>
+        <hr />
+      </header>
+      <main class="slide-body two-col">
+        <div>
+          <h1>
+            Idea: Encode expert knowledge as if-then rules (a.k.a. Decision
+            Trees)
+          </h1>
+
+          <ul class="bullets">
+            <li>Is it cold out?</li>
+            <ul class="bullets">
+              <li>Yes: Is it raining?</li>
+              <ul class="bullets">
+                <li>Yes: Bring Umbrella</li>
+                <li>No: Wear Sweater</li>
+              </ul>
+              <li>No: Is it Sunny?</li>
+              <ul class="bullets">
+                <li>Yes: Wear T-shirt</li>
+                <li>No: Wear sweater</li>
+              </ul>
+            </ul>
+            <li>Real Examples:</li>
+            <ul class="bullets">
+              <li>
+                MYCIN: Used to diagnose blood infections and propose treatment
+                plans; based on ~600 expert provided rules.
+              </li>
+              <li>
+                XCON: Configure DEC VAX computer system orders; based on ~2,500
+                expert provided rules.
+              </li>
+            </ul>
+            <li>
+              <i
+                >Decision Trees are still useful and the questions/thresholds
+                can be learned by an algorithm, easily in fact. Key point: DTs
+                used to be "AI", now they are more like "old-school ML".</i
+              >
+            </li>
+          </ul>
+        </div>
+        <figure class="slide-figure">
+          <img
+            class="img-md"
+            alt="Decision Tree"
+            src="../assets/images/DecisionTree.jpg"
+          />
+          <figcaption class="caption">
+            https://inside-machinelearning.com/en/decision-tree-and-hyperparameters/
+          </figcaption>
+        </figure>
+      </main>
+      <footer class="slide-nav" data-auto-nav>
+        <a class="nav-prev" href="history-winter.html">‹ Prev</a>
+        <a class="nav-index" href="../index.html">Index</a>
+        <a class="nav-next" href="backprop.html">Next ›</a>
+        <span class="nav-counter">13/25</span>
+      </footer>
+    </div>
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>

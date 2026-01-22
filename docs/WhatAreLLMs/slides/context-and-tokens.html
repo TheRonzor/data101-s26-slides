@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Context and Tokens</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">Context Windows and Tokens</h1>
+        <hr />
+      </header>
+      <main class="slide-body">
+        <div>
+          <h1>All LLMs have a limited <b>context window</b>.</h1>
+          <ul class="bullets">
+            <li>Context windows are measured in <b>tokens</b>.</li>
+            <li>
+              Tokens are like "units of text". They are typically words, parts
+              of words, and punctuation.
+            </li>
+            <li>
+              "He is running." might decompose into 5 tokens: (he, is, run,
+              ning, .)
+            </li>
+            <li>
+              Different models tokenize differently, so mileage may vary. (See
+              https://tiktokenizer.vercel.app/)
+            </li>
+            <li>
+              LLMs use the tokens in their current context window to predict the
+              next token, over and over and over again.
+            </li>
+            <li>
+              Many models implement "reasoning" steps as well, where they
+              conduct an internal dialog with themselves before producing the
+              final answer they give you. These tokens can also count towards
+              things like usage limits and billing rates.
+            </li>
+            <li>
+              Context windows generally range from thousands to millions of
+              tokens, depending on the model.
+            </li>
+          </ul>
+        </div>
+        <!-- <div> -->
+
+        <!-- </div> -->
+      </main>
+      <footer class="slide-nav" data-auto-nav>
+        <a class="nav-prev" href="where-are-we-now.html">‹ Prev</a>
+        <a class="nav-index" href="../index.html">Index</a>
+        <a class="nav-next" href="context-and-tokens-2.html">Next ›</a>
+        <span class="nav-counter">20/25</span>
+      </footer>
+    </div>
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>

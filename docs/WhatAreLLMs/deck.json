@@ -1,0 +1,109 @@
+{
+  "title": "What are Large Language Models?",
+  "theme": "assets/theme.css",
+  "math": {
+    "engine": "katex"
+  },
+  "slides": [
+    {
+      "file": "slides/intro.html",
+      "title": "Intro"
+    },
+    {
+      "file": "slides/ai-everywhere.html",
+      "title": "AI is Everywhere"
+    },
+    {
+      "file": "slides/ai-vs-ml.html",
+      "title": "AI vs ML"
+    },
+    {
+      "file": "slides/ai-vs-ml-2.html",
+      "title": "AI vs ML p2"
+    },
+    {
+      "file": "slides/ai-vs-ml-3.html",
+      "title": "AI vs ML p3"
+    },
+    {
+      "file": "slides/what-is-gen-ai.html",
+      "title": "What is GenAI?"
+    },
+    {
+      "file": "slides/what-is-gen-ai-2.html",
+      "title": "What is GenAI?"
+    },
+    {
+      "file": "slides/what-are-llms.html",
+      "title": "What are LLMs?"
+    },
+    {
+      "file": "slides/history-of-ai.html",
+      "title": "History of AI"
+    },
+    {
+      "file": "slides/history-perceptron.html",
+      "title": "Mark I Perceptron"
+    },
+    {
+      "file": "slides/history-perceptron-2.html",
+      "title": "Mark I Perceptron p2"
+    },
+    {
+      "file": "slides/history-winter.html",
+      "title": "AI Winter"
+    },
+    {
+      "file": "slides/expert-systems.html",
+      "title": "Expert Systems"
+    },
+    {
+      "file": "slides/backprop.html",
+      "title": "Backpropagation"
+    },
+    {
+      "file": "slides/mlp-case-digits.html",
+      "title": "MLP Examples"
+    },
+    {
+      "file": "slides/back-to-llms.html",
+      "title": "Back to LLMs"
+    },
+    {
+      "file": "slides/what-is-transformer.html",
+      "title": "What is a Transformer?"
+    },
+    {
+      "file": "slides/what-is-transformer-2.html",
+      "title": "What is a Transformer, p2?"
+    },
+    {
+      "file": "slides/where-are-we-now.html",
+      "title": "Where are we now?"
+    },
+    {
+      "file": "slides/context-and-tokens.html",
+      "title": "Context Windows and Tokens"
+    },
+    {
+      "file": "slides/context-and-tokens-2.html",
+      "title": "Context Windows and Tokens, p2"
+    },
+    {
+      "file": "slides/context-and-tokens-3.html",
+      "title": "Context Windows and Tokens, p3"
+    },
+    {
+      "file": "slides/context-and-tokens-4.html",
+      "title": "Context Windows and Tokens, p4"
+    },
+    {
+      "file": "slides/context-and-tokens-5.html",
+      "title": "Context Windows and Tokens, p5"
+    },
+    {
+      "file": "slides/citing-ai.html",
+      "title": "Citing AI"
+    }
+  ]
+}

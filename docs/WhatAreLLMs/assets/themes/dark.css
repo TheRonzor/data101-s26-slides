@@ -1,0 +1,23 @@
+/* assets/themes/dark.css */
+:root{
+  --bg: #0f1115;
+  --fg: #f4f6f8;
+  --muted: #a7b0ba;
+  --border: #2b313a;
+  --card-bg: #151923;
+  --link: #7db2ff;
+}
+
+body { background: var(--bg); color: var(--fg); }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); }
+
+.slide-nav { border-top: 1px solid var(--border); }
+
+.slide-nav a {
+  border: 1px solid var(--border);
+  color: var(--fg);
+}
+.slide-nav a:hover { border-color: var(--muted); }
+
+a { color: var(--link); }

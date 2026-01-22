@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Backpropagation</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">Breakthrough: The Chain Rule! (1986)</h1>
+        <hr />
+      </header>
+      <main class="slide-body two-col">
+        <div>
+          <h1>
+            jk: The Chain Rule already existed (17th century; Newton, Leibniz).
+          </h1>
+          <ul class="bullets">
+            <li>
+              Going back to the original perceptron, there were two main
+              problems:
+            </li>
+            <ol class="bullets">
+              <li>The network needs more hidden ("in-between") layers.</li>
+              <li>
+                This can result in an explosion in the number of model
+                parameters - need an efficient way to train the model (determine
+                all of the model weights).
+              </li>
+            </ol>
+            <li>
+              <b>Backpropagation</b> was the key breakthrough here. Students of
+              Calculus: In essence, this is an application of the Chain Rule.
+            </li>
+          </ul>
+        </div>
+        <figure class="slide-figure">
+          <img
+            class="img-sm"
+            alt="Backpropagation"
+            src="../assets/images/back.png"
+          />
+          <figcaption class="caption">
+            https://www.r-bloggers.com/2017/05/training-neural-networks-with-backpropagation-original-publication/
+          </figcaption>
+        </figure>
+      </main>
+      <footer class="slide-nav" data-auto-nav>
+        <a class="nav-prev" href="expert-systems.html">‹ Prev</a>
+        <a class="nav-index" href="../index.html">Index</a>
+        <a class="nav-next" href="mlp-case-digits.html">Next ›</a>
+        <span class="nav-counter">14/25</span>
+      </footer>
+    </div>
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>

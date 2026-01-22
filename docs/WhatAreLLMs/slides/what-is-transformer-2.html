@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Transformers, p2</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">What is a Transformer?</h1>
+        <hr />
+      </header>
+      <main class="slide-body two-col">
+        <div>
+          <h1>
+            And why did you spend all that time talking about perceptrons?
+          </h1>
+          <ul class="bullets">
+            <li>
+              The blue Feed Forward blocks in the diagram are MLPs
+              <i
+                >(for the sake of terminology, note that all MLPs are FFNs, but
+                not all FFNs are MLPs)</i
+              >.
+            </li>
+            <li>
+              GPT-3 contained 96 transformer decoders (the left half of the
+              figure).
+            </li>
+            <li>Each decoder has an MLP as just one of its components.</li>
+            <li>
+              The attention layers also contain many parameters (you'll have to
+              go read the paper for more detail!)
+            </li>
+            <li>
+              For GPT-3, this works out to 175 billion parameters that need to
+              be optimized during training!
+            </li>
+          </ul>
+          <h1>
+            What started off as a room-sized machine (the Mark I) is now just
+            one of hundreds of the components of an LLM!
+          </h1>
+        </div>
+        <!-- <div> -->
+        <figure class="slide-figure">
+          <img
+            class="img-sm"
+            alt="MLP Diagram"
+            src="../assets/images/attention_fig1.png"
+          />
+          <figcaption class="caption">
+            https://arxiv.org/pdf/1706.03762
+          </figcaption>
+        </figure>
+        <!-- </div> -->
+      </main>
+      <footer class="slide-nav" data-auto-nav>
+        <a class="nav-prev" href="what-is-transformer.html">‹ Prev</a>
+        <a class="nav-index" href="../index.html">Index</a>
+        <a class="nav-next" href="where-are-we-now.html">Next ›</a>
+        <span class="nav-counter">18/25</span>
+      </footer>
+    </div>
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>
