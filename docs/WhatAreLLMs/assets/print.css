@@ -4,7 +4,9 @@
 
 @media print {
   /* Hide screen-only nav */
-  .slide-nav { display: none !important; }
+  .slide-nav {
+    display: none !important;
+  }
 
   /* Each slide as its own page */
   .print-slide {
@@ -13,14 +15,19 @@
   }
 
   /* Avoid splitting certain blocks */
-  figure, pre, code, blockquote, table, .card {
+  figure,
+  pre,
+  code,
+  blockquote,
+  table,
+  .card {
     break-inside: avoid;
     page-break-inside: avoid;
   }
 
   /* Reduce margins/padding for paper */
   .slide {
-    max-width: none;
+    max-width: 400px;
     padding: 18px 18px;
   }
 

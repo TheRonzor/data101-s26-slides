@@ -83,13 +83,13 @@ ul.bullets {
 
 /* Figure area */
 .slide-figure {
-  margin: 0;
-  align-self: start;
+  /* margin: auto; */
+  align-self: center;
 }
 
 .slide-figure img {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  /* height: auto; */
   display: block;
   border-radius: 10px;
 }
@@ -107,6 +107,17 @@ ul.bullets {
 }
 
 /* Image sizing helpers */
+
+.img-global {
+  display: block; /* enables margin auto centering */
+  margin: 0 auto; /* center in container */
+  max-width: 600px;
+  max-height: 600px;
+  width: 100%; /* upscale to container... */
+  height: auto; /* ...but keep aspect ratio */
+  object-fit: contain; /* never crop if constrained */
+}
+
 .img-sm {
   max-width: 240px;
   max-height: 240px;

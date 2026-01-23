@@ -75,11 +75,11 @@ def rel_href(from_path: Path, to_path: Path) -> str:
     return rel
 
 def rewrite_img_srcs(body_html: str, slide_path: Path) -> str:
-    print('Warning: rewrite_img_srcs was called.')
+    print('\n\nWarning: rewrite_img_srcs was called.\n\n')
     return body_html
 
     # This is an example of AI not understanding what we are trying to do! [_]
-    # It is a plausible continution of the code, but it doesn't make any _actual_ sense!
+    # It is a plausible continuation of the code, but it doesn't make any _actual_ sense!
 
     # For print.html: convert relative img src to repo-root-absolute paths
     def repl(m: re.Match) -> str:
