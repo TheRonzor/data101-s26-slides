@@ -1,0 +1,28 @@
+{
+  "title": "Edit this header in deck.json",
+  "theme": "assets/theme.css",
+  "math": {
+    "engine": "katex"
+  },
+  "slides": [
+    {
+      "file": "slides/intro.html",
+      "title": "Intro"
+    },
+    {
+      "file": "slides/layout.html",
+      "title": "Standard layout + figure"
+    },
+    {
+      "file": "slides/math.html",
+      "title": "Math + Interactive Value (Katex)",
+      "math": "katex",
+      "scripts": ["./math-demo.js"]
+    },
+    {
+      "file": "slides/math-demo-full.html",
+      "title": "Full Math Demo",
+      "scripts": ["math-demo-full.js"]
+    }
+  ]
+}

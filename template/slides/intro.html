@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Intro</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">Intro to My Slideshow</h1>
+        <hr />
+      </header>
+      <main class="slide-body">
+        <ul class="bullets">
+          <li>Each slide is its own HTML file in <code>/slides</code>.</li>
+          <li>
+            Order lives in <code>deck.json</code> (insert slides without
+            renaming).
+          </li>
+          <li>
+            After slide order is adjusted in <code>deck.json</code>, run
+            <code>build_deck.py</code> to udpate the deck.
+          </li>
+          <li>
+            Navigation is injected automatically (Prev / Index / Next).
+            <code>index.html</code> and <code>print.html</code> updated
+            automatically.
+          </li>
+          <li>
+            Print everything via <code>/print.html</code>. Most interactivity is
+            intentionally disabled in the print version.
+          </li>
+        </ul>
+        <div class="card">
+          <strong>Tip:</strong> A very strong tip! Uses <code>.card</code>
+        </div>
+      </main>
+      <footer class="slide-nav" data-auto-nav>
+      <a class="nav-prev" href="#" aria-disabled="true">‹ Prev</a>
+      <a class="nav-index" href="../index.html">Index</a>
+      <a class="nav-next" href="layout.html">Next ›</a>
+      <span class="nav-counter">1/4</span>
+    </footer>
+    </div>
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>

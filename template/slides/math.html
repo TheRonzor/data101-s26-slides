@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Math + interactive value</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">Math + Interactive Value</h1>
+        <hr />
+      </header>
+      <main class="slide-body">
+        <ul class="bullets">
+          <li>Inline math: $f(x) = x^2$</li>
+          <li>Display math: $$\int_0^1 x\,dx = \tfrac{1}{2}$$</li>
+          <li>Interactive value: <span id="x_math">$x = 3$</span></li>
+          <li>
+            Updates: <span id="fx_math">$f(x)=9$</span> (driven by a slider)
+          </li>
+        </ul>
+
+        <div class="card">
+          <label for="x" style="display: block; margin-bottom: 8px"
+            >Adjust x:</label
+          >
+          <input id="x" type="range" min="0" max="10" value="3" />
+        </div>
+      </main>
+      <footer class="slide-nav" data-auto-nav>
+      <a class="nav-prev" href="layout.html">‹ Prev</a>
+      <a class="nav-index" href="../index.html">Index</a>
+      <a class="nav-next" href="math-demo-full.html">Next ›</a>
+      <span class="nav-counter">3/4</span>
+    </footer>
+    </div>
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <script src="./math-demo.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>

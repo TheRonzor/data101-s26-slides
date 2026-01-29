@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Math demo + graphs</title>
+    <link rel="stylesheet" href="../assets/base.css" />
+    <link rel="stylesheet" href="../assets/theme.css" />
+  </head>
+  <body>
+    <div class="slide">
+      <header class="slide-header">
+        <h1 class="slide-title">Math Demo + Graphs</h1>
+        <hr />
+      </header>
+
+      <main class="slide-body">
+        <ul class="bullets">
+          <!-- Static inline math -->
+          <li>Static inline: $E = mc^2$</li>
+
+          <!-- Static display math -->
+          <li>
+            Static display:
+            <div class="math-display">$$\int_0^1 x\,dx = \tfrac{1}{2}$$</div>
+          </li>
+
+          <!-- Dynamic inline math (slider-driven) -->
+          <li>
+            Dynamic inline:
+            <span id="dyn_inline">$a = 1.0$</span>
+          </li>
+
+          <!-- Dynamic display math (slider-driven) -->
+          <li>
+            Dynamic display:
+            <div id="dyn_display" class="math-display">
+              $$y = a x^2,\quad a=1.0$$
+            </div>
+          </li>
+        </ul>
+
+        <div class="card">
+          <label for="a" style="display: block; margin-bottom: 8px">
+            Adjust <span class="mono">a</span>:
+            <span id="a_readout" class="mono">1.0</span>
+          </label>
+          <input id="a" type="range" min="0" max="4" step="0.1" value="1.0" />
+        </div>
+
+        <div class="grid-2" style="margin-top: 16px">
+          <!-- Static graph -->
+          <div class="card">
+            <div class="muted" style="margin-bottom: 8px">
+              Static graph (SVG): $y = x^2$ with a few sample points
+            </div>
+
+            <svg
+              class="plot"
+              id="plot_static"
+              viewBox="0 0 520 280"
+              role="img"
+              aria-label="Static plot of y equals x squared"
+            >
+              <!-- axes -->
+              <line
+                x1="40"
+                y1="240"
+                x2="500"
+                y2="240"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+              <line
+                x1="40"
+                y1="20"
+                x2="40"
+                y2="240"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+
+              <!-- labels -->
+              <text x="505" y="244" font-size="12">x</text>
+              <text x="30" y="18" font-size="12">y</text>
+
+              <!-- curve path (filled by JS or left static; here we fill once in JS for consistency) -->
+              <path
+                id="static_curve"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                opacity="0.9"
+              ></path>
+
+              <!-- sample points -->
+              <g id="static_points" fill="currentColor" opacity="0.9"></g>
+            </svg>
+          </div>
+
+          <!-- Interactive graph -->
+          <div class="card">
+            <div class="muted" style="margin-bottom: 8px">
+              Interactive graph (SVG): $y = a x^2$ (updates with slider)
+            </div>
+
+            <svg
+              class="plot"
+              id="plot_dynamic"
+              viewBox="0 0 520 280"
+              role="img"
+              aria-label="Interactive plot of y equals a times x squared"
+            >
+              <!-- axes -->
+              <line
+                x1="40"
+                y1="240"
+                x2="500"
+                y2="240"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+              <line
+                x1="40"
+                y1="20"
+                x2="40"
+                y2="240"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+
+              <!-- labels -->
+              <text x="505" y="244" font-size="12">x</text>
+              <text x="30" y="18" font-size="12">y</text>
+
+              <!-- dynamic curve -->
+              <path
+                id="dyn_curve"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                opacity="0.9"
+              ></path>
+
+              <!-- marker at x=2 -->
+              <circle
+                id="dyn_marker"
+                r="4"
+                fill="currentColor"
+                opacity="0.95"
+              ></circle>
+              <text
+                id="dyn_marker_label"
+                font-size="12"
+                fill="currentColor"
+              ></text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- tiny local styling helpers (optional) -->
+        <style>
+          .math-display {
+            margin-top: 6px;
+          }
+          .mono {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+              "Liberation Mono", "Courier New", monospace;
+          }
+          .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+          }
+          .plot {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+          @media (max-width: 900px) {
+            .grid-2 {
+              grid-template-columns: 1fr;
+            }
+          }
+        </style>
+      </main>
+
+      <footer class="slide-nav" data-auto-nav>
+      <a class="nav-prev" href="math.html">‹ Prev</a>
+      <a class="nav-index" href="../index.html">Index</a>
+      <a class="nav-next" href="#" aria-disabled="true">Next ›</a>
+      <span class="nav-counter">4/4</span>
+    </footer>
+    </div>
+
+    <!-- AUTO-SCRIPTS:BEGIN -->
+    <script src="../assets/math-katex-setup.js"></script>
+    <script src="./math-demo-full.js"></script>
+    <!-- AUTO-SCRIPTS:END -->
+  </body>
+</html>

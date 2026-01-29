@@ -1,0 +1,25 @@
+/* assets/themes/light.css */
+:root{
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #5a5a5a;
+  --border: #d7d7d7;
+  --card-bg: #f7f7f7;
+  --link: #0b57d0;
+}
+
+body { background: var(--bg); color: var(--fg); }
+
+.slide-title { color: var(--fg); }
+
+.card { background: var(--card-bg); border: 1px solid var(--border); }
+
+.slide-nav { border-top: 1px solid var(--border); }
+
+.slide-nav a {
+  border: 1px solid var(--border);
+  color: var(--fg);
+}
+.slide-nav a:hover { border-color: var(--muted); }
+
+a { color: var(--link); }
