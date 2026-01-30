@@ -1,0 +1,170 @@
+/* assets/base.css
+   Structure and utility classes. Keep this stable; swap look-and-feel via theme.css.
+*/
+
+:root {
+  --slide-max-width: 1100px;
+  --slide-padding: 28px;
+  --header-gap: 10px;
+  --body-gap: 18px;
+}
+
+/* Page baseline */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  line-height: 1.25;
+}
+
+/* Slide layout */
+.slide {
+  max-width: var(--slide-max-width);
+  margin: 0 auto;
+  padding: var(--slide-padding);
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-header {
+  margin-bottom: var(--header-gap);
+}
+
+.slide-title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.slide-body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--body-gap);
+  align-content: start;
+}
+
+/* Two-column variant */
+.slide-body.two-col {
+  grid-template-columns: 1fr 0.95fr;
+  align-items: start;
+}
+
+/* Bullets */
+.bullets {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.2rem;
+  padding-top: 0rem;
+  font-size: 1.5rem;
+}
+.bullets li {
+  margin-bottom: 1.2rem;
+}
+
+ul.bullets {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Figure area */
+.slide-figure {
+  margin: 0;
+  align-self: start;
+}
+
+.slide-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Figure alignment helpers */
+.slide-figure.left {
+  justify-self: start;
+}
+.slide-figure.center {
+  justify-self: center;
+  text-align: center;
+}
+.slide-figure.right {
+  justify-self: end;
+}
+
+/* Image sizing helpers */
+.img-sm {
+  max-width: 240px;
+}
+.img-md {
+  max-width: 420px;
+}
+.img-lg {
+  max-width: 640px;
+}
+
+.caption {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: center;
+}
+.caption-p {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* Simple “card” helper for demos */
+.card {
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation footer (screen) */
+.slide-nav {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.slide-nav a,
+.slide-nav button {
+  font: inherit;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.slide-nav a[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Print: keep base rules minimal; see print.css for pagination */
+@media print {
+  body {
+    margin: 0;
+  }
+  .slide {
+    min-height: auto;
+  }
+}

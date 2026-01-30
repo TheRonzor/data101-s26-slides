@@ -1,0 +1,4 @@
+/* assets/theme.css
+   Theme alias. Swap the @import to change theme without editing slide files.
+*/
+@import url("themes/light.css");

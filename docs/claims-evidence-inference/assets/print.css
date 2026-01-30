@@ -1,0 +1,31 @@
+/* assets/print.css
+   Print-specific rules used by print.html (and can also apply to slides).
+*/
+
+@media print {
+  /* Hide screen-only nav */
+  .slide-nav { display: none !important; }
+
+  /* Each slide as its own page */
+  .print-slide {
+    break-after: page;
+    page-break-after: always; /* legacy fallback */
+  }
+
+  /* Avoid splitting certain blocks */
+  figure, pre, code, blockquote, table, .card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Reduce margins/padding for paper */
+  .slide {
+    max-width: none;
+    padding: 18px 18px;
+  }
+
+  /* Keep links readable on paper */
+  a[href]:after {
+    content: "";
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Claims, Evidence, & Inferences",
+  "theme": "assets/theme.css",
+  "math": {
+    "engine": "katex"
+  },
+  "slides": [
+    {
+      "file": "slides/intro.html",
+      "title": "Intro"
+    },
+    {
+      "file": "slides/definitions.html",
+      "title": "Definitions"
+    },
+    {
+      "file": "slides/claims-examples-1.html",
+      "title": "Math Example"
+    },
+    {
+      "file": "slides/claims-examples-2.html",
+      "title": "Medical Example"
+    },
+    {
+      "file": "slides/claims-examples-3.html",
+      "title": "Physics Example"
+    },
+    {
+      "file": "slides/warmup-1.html",
+      "title": "Warmup, p1"
+    },
+    {
+      "file": "slides/warmup-2.html",
+      "title": "Warmup, p2"
+    },
+    {
+      "file": "slides/warmup-3.html",
+      "title": "Warmup, p3"
+    }
+  ]
+}
